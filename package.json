@@ -1,0 +1,48 @@
+{
+  "name": "lingui-issue-repr",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "vite build && vite build --ssr",
+    "dev": "vite dev",
+    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "start": "remix-serve ./build/server/index.js",
+    "typecheck": "tsc",
+    "messages:extract": "lingui extract"
+  },
+  "dependencies": {
+    "@lingui/core": "^4.6.0",
+    "@lingui/macro": "^4.6.0",
+    "@lingui/react": "^4.6.0",
+    "@remix-run/node": "^2.4.0",
+    "@remix-run/react": "^2.4.0",
+    "@remix-run/serve": "^2.4.0",
+    "isbot": "^3.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@lingui/cli": "^4.6.0",
+    "@lingui/vite-plugin": "^4.6.0",
+    "@remix-run/dev": "^2.4.0",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "babel-plugin-macros": "^3.1.0",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8",
+    "vite-plugin-babel-macros": "^1.0.6",
+    "vite-tsconfig-paths": "^4.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
